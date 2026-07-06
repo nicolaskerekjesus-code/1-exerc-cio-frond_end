@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela de Vendas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            text-align: left;
+            margin: 20px;
+        }
+        th, td {
+            border: 2px solid #7f7f7f;
+            padding: 8px 12px;
+            font-size: 18px;
+        }
+        /* Estilo para o título do mês (Amarelo) */
+        .titulo-mes {
+            background-color: #ffff00;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        /* Estilo para o cabeçalho das colunas (Azul) */
+        .cabecalho-coluna {
+            background-color: #99ccff;
+            font-weight: bold;
+            color: #000;
+        }
+        /* Alinhamento dos números para a direita (opcional, mas comum para dados) */
+        .dados-numericos {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td colspan="2" class="titulo-mes">Vendas março 2010</td>
+        </tr>
+        <tr>
+            <td class="cabecalho-coluna">Carro</td>
+            <td class="cabecalho-coluna">Unidades</td>
+        </tr>
+        <tr>
+            <td>Gol</td>
+            <td class="dados-numericos">250.000</td>
+        </tr>
+        <tr>
+            <td>Uno</td>
+            <td class="dados-numericos">123.000</td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="titulo-mes">Vendas fev. 2010</td>
+        </tr>
+        <tr>
+            <td class="cabecalho-coluna">Carro</td>
+            <td class="cabecalho-coluna">Unidades</td>
+        </tr>
+        <tr>
+            <td>Gol</td>
+            <td class="dados-numericos">250.000</td>
+        </tr>
+        <tr>
+            <td>Uno</td>
+            <td class="dados-numericos">123.000</td>
+        </tr>
+    </table>
+
+</body>
+</html>
