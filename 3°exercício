@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela Campeonato Brasileiro</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+        }
+        h3 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 5px;
+            margin-left: 35px; /* Alinhamento aproximado com a tabela */
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            border: 2px solid #7f7f7f;
+            padding: 6px 12px;
+            font-size: 22px;
+            color: #000;
+        }
+        /* Célula Vertical (Amarela) */
+        .serie-titulo {
+            background-color: #ffff00;
+            font-weight: bold;
+            text-align: center;
+            width: 100px;
+        }
+        /* Cabeçalho das Colunas (Azul) */
+        .cabecalho-coluna {
+            background-color: #99ccff;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Campeonato Brasileiro</h3>
+
+    <table>
+        <tr>
+            <td rowspan="4" class="serie-titulo">Serie A</td>
+            <td class="cabecalho-coluna" style="width: 160px;">Time</td>
+            <td class="cabecalho-coluna" style="width: 90px;">Pontos</td>
+        </tr>
+        <tr>
+            <td>Internacional</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Juventude</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>Flamengo</td>
+            <td>30</td>
+        </tr>
+    </table>
+
+</body>
+</html>
