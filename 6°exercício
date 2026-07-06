@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela Visitas Mensais</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+        }
+        td {
+            border: 2px solid #7f7f7f;
+            padding: 8px 14px;
+            font-size: 24px;
+            color: #000;
+            text-align: center;
+        }
+        /* Cabeçalho Principal (Azul) */
+        .cabecalho-principal {
+            background-color: #99ccff;
+            font-weight: bold;
+            font-size: 26px;
+        }
+        /* Coluna do Ano 2010 (Amarelo) */
+        .ano-2010 {
+            background-color: #ffff00;
+            font-weight: bold;
+            width: 80px;
+        }
+        /* Cabeçalhos inferiores (Média e Períodos) */
+        .sub-cabecalho {
+            font-weight: bold;
+            width: 110px;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td colspan="3" class="cabecalho-principal">Visitas mensais</td>
+        </tr>
+        
+        <tr>
+            <td rowspan="5" class="ano-2010">2010</td>
+            <td colspan="2">144.000</td>
+        </tr>
+        
+        <tr>
+            <td colspan="2">139.580</td>
+        </tr>
+        
+        <tr>
+            <td colspan="2">254.900</td>
+        </tr>
+        
+        <tr>
+            <td class="sub-cabecalho">Média</td>
+            <td class="sub-cabecalho">Períodos</td>
+        </tr>
+        
+        <tr>
+            <td>201.000</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+</body>
+</html>
