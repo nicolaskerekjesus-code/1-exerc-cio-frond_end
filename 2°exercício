@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela de Vendas de Carros</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+        }
+        td {
+            border: 2px solid #7f7f7f;
+            padding: 6px 10px;
+            font-size: 20px;
+            color: #000;
+        }
+        /* Título Principal (Amarelo) */
+        .titulo-principal {
+            background-color: #ffff00;
+            font-weight: bold;
+            text-align: center;
+            font-size: 22px;
+        }
+        /* Subtítulos de Mês e Ano (Verde Claro) */
+        .subtitulo-data {
+            background-color: #ccffcc;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* Cabeçalho das Colunas (Azul) */
+        .cabecalho-coluna {
+            background-color: #99ccff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td colspan="3" class="titulo-principal">Vendas de Carros</td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="subtitulo-data">Março</td>
+            <td class="subtitulo-data">2010</td>
+        </tr>
+        <tr>
+            <td class="cabecalho-coluna">Carro</td>
+            <td class="cabecalho-coluna">Unidades</td>
+            <td class="cabecalho-coluna">Montadora</td>
+        </tr>
+        <tr>
+            <td>Gol</td>
+            <td>250.000</td>
+            <td>VW</td>
+        </tr>
+        <tr>
+            <td>Celta</td>
+            <td>190.000</td>
+            <td>GM</td>
+        </tr>
+        <tr>
+            <td>Uno</td>
+            <td>123.000</td>
+            <td>Fiat</td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="subtitulo-data">Fevereiro</td>
+            <td class="subtitulo-data">2010</td>
+        </tr>
+        <tr>
+            <td class="cabecalho-coluna">Carro</td>
+            <td class="cabecalho-coluna">Unidades</td>
+            <td class="cabecalho-coluna">Montadora</td>
+        </tr>
+        <tr>
+            <td>Gol</td>
+            <td>230.000</td>
+            <td>VW</td>
+        </tr>
+        <tr>
+            <td>Celta</td>
+            <td>189.000</td>
+            <td>GM</td>
+        </tr>
+        <tr>
+            <td>Uno</td>
+            <td>114.000</td>
+            <td>Fiat</td>
+        </tr>
+    </table>
+
+</body>
+</html>
