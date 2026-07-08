@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Certificado</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Container principal simulando a borda ondulada do certificado */
+        .certificate-container {
+            background-color: #ffffff;
+            width: 700px;
+            height: 480px;
+            padding: 40px;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            
+            /* Borda simulando o estilo ondulado/decorativo */
+            border: 20px solid transparent;
+            border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M0 30 Q 15 15, 30 30 T 60 30' fill='none' stroke='black' stroke-width='8'/%3E%3C/svg%3E") 20 round;
+        }
+
+        /* Título com fonte estilizada */
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 58px;
+            font-weight: normal;
+            font-style: italic;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            color: #000000;
+        }
+
+        /* Estrutura do Formulário */
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-size: 18px;
+            width: 140px;
+            color: #000000;
+            line-height: 1.2;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"] {
+            width: 220px;
+            height: 32px;
+            border: 1px solid #a9a9a9;
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        /* Botão Enviar estilo clássico de sistema */
+        button {
+            margin-left: 140px;
+            padding: 4px 12px;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ffffff 0%, #ebebeb 50%, #dddddd 55%, #cfcfcf 100%);
+            border: 1px solid #707070;
+            border-radius: 3px;
+            cursor: pointer;
+            box-shadow: inset 0 1px 0 white;
+        }
+
+        button:active {
+            background: #e2e2e2;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+        }
+
+        /* Selo/Medalha decorativa no canto inferior direito */
+        .seal-badge {
+            position: absolute;
+            bottom: 40px;
+            right: 60px;
+            width: 130px;
+            height: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle {
+            width: 85px;
+            height: 85px;
+            border: 3px solid #000000;
+            border-radius: 50%;
+            background-color: #ffffff;
+            position: absolute;
+            z-index: 2;
+        }
+
+        .ribbons {
+            position: absolute;
+            bottom: -5px;
+            width: 100px;
+            height: 50px;
+            z-index: 1;
+        }
+
+        /* Desenho das fitas usando SVG para fidelidade ao original */
+        .ribbons svg {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="certificate-container">
+        <h1>Certificate</h1>
+        
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="data-nasc">Data<br>Nascimento:</label>
+                <input type="date" id="data-nasc" name="data-nasc">
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div class="seal-badge">
+            <div class="circle"></div>
+            <div class="ribbons">
+                <svg viewBox="0 0 100 50">
+                    <polygon points="20,0 38,45 23,35 8,45" fill="none" stroke="black" stroke-width="3" stroke-linejoin="round"/>
+                    <polygon points="80,0 62,45 77,35 92,45" fill="none" stroke="black" stroke-width="3" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
