@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Técnica - Polo GTI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container-principal {
+            border: 2px solid #000000;
+            width: 700px;
+            padding: 4px;
+            box-sizing: border-box;
+        }
+
+        .titulo-topo {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 8px 0;
+            margin-bottom: 4px;
+            letter-spacing: 2px;
+        }
+
+        .grid-conteudo {
+            display: grid;
+            grid-template-columns: 260px 180px 1fr;
+            gap: 4px;
+        }
+
+        /* Coluna da Esquerda (Imagem e Texto) */
+        .coluna-esquerda {
+            grid-row: span 5;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .bloco-imagem {
+            border: 1px solid #999999;
+            height: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-color: #f0f0f0;
+        }
+
+        .bloco-imagem img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .bloco-texto {
+            border: 1px solid #999999;
+            padding: 10px;
+            font-size: 13.5px;
+            line-height: 1.4;
+            text-align: justify;
+            flex-grow: 1;
+        }
+
+        /* Células da Tabela (Colunas do Meio e Direita) */
+        .celula {
+            border: 1px solid #999999;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .col-meio {
+            justify-content: center;
+            text-align: center;
+            font-weight: bold;
+            background-color: #f9f9f9;
+        }
+
+        .col-direita {
+            justify-content: center;
+            text-align: center;
+        }
+
+        /* Ajuste específico para a primeira linha da tabela (Nome do carro) */
+        .linha-nome {
+            height: 180px;
+            grid-column: span 2;
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-principal">
+    <div class="titulo-topo">Ficha técnica</div>
+
+    <div class="grid-conteudo">
+        
+        <div class="coluna-esquerda">
+            <div class="bloco-imagem">
+                <img src="polaco.jpg" alt="Volkswagen Polo GTI Vermelho">
+            </div>
+            <div class="bloco-texto">
+                O novo hatch da VW deve chegar à Europa em 2009 e sua versão esportiva vem um ano depois. O modelo deve utilizar a plataforma PQ25. A versão atual (foto) utiliza a PQ 24, que também equipa nossos Gol e Fox. A nova plataforma já é utilizada no espanhol Seat Ibiza. Também graças à PQ25 os brasileiros receberam o conjunto de suspensão dianteira do novo Gol. O motor que equipará o novo Polo GTI deve ser um 1.4 turbo TSI (com injeção direta de combustível).
+            </div>
+        </div>
+
+        <div class="celula col-meio linha-nome">Polo GTI</div>
+
+        <div class="celula col-meio">Motor</div>
+        <div class="celula col-direita">1.4 Turbo TSI</div>
+
+        <div class="celula col-meio">Potência</div>
+        <div class="celula col-direita">170 cv</div>
+
+        <div class="celula col-meio">Câmbio</div>
+        <div class="celula col-direita">DSG de 7 marchas</div>
+
+        <div class="celula col-meio">Plataforma</div>
+        <div class="celula col-direita">PQ25</div>
+
+    </div>
+</div>
+
+</body>
+</html>
